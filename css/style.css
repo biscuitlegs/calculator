@@ -1,0 +1,191 @@
+/*General*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+    background-color: #eeeeee;
+}
+
+/*Header*/
+
+.header-title {
+    text-align: center;
+    padding: 30px;
+}
+
+.header-content {
+    text-align: center;
+}
+
+/*Calculator*/
+
+.display-container {
+    font-size: 25px;
+    padding-top: 16%;
+    text-align: center;
+    background-color: #b8b8a8;
+    width: 250px;
+    height: 120px;
+    position: absolute;
+    left: 50%;
+    top: 17%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+}
+
+.calculator {
+    background-color: #808080;
+    height: 450px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+.clear {
+    background-color: #377c71;
+}
+
+.clear:active {
+    background-color: #1a3d37;
+}
+
+.operator {
+    background-color: #91e8ee;
+}
+
+.operator:active {
+    background-color: #4b7a7e;
+}
+
+.num, .decimal {
+    background-color: #383737;
+    color: #ffffff;
+}
+
+.num:active, .decimal:active {
+    background-color: #616060;
+    color: #ffffff;
+}
+
+.equals {
+    background-color: #e79b0e;
+}
+
+.equals:active {
+    background-color: #7a5106;
+}
+
+.btn {
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 2px 2px 2px #000000;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    cursor: default;
+}
+
+/*Screen sizes*/
+
+@media only screen and (max-height: 650px) {
+    header {
+        display: none;
+    }
+}
+
+/*Grid*/
+
+.buttons {
+    position: relative;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 280px;
+    display: grid;
+    grid-gap: 0.1em;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: '. . . clear'
+                         'seven eight nine plus'
+                         'four five six subt'
+                         'one two three mult'
+                         'zer dec equ divi';
+}
+
+.btn1 {
+    grid-area: one;
+}
+
+.btn2 {
+    grid-area: two;
+}
+
+.btn3 {
+    grid-area: three;
+}
+
+.btn4 {
+    grid-area: four;
+}
+
+.btn5 {
+    grid-area: five;
+}
+
+.btn6 {
+    grid-area: six;
+}
+
+.btn7 {
+    grid-area: seven;
+}
+
+.btn8 {
+    grid-area: eight;
+}
+
+.btn9 {
+    grid-area: nine;
+}
+
+.btn0 {
+    grid-area: zer;
+}
+
+.decimal {
+    grid-area: dec;
+}
+
+.equals {
+    grid-area: equ;
+}
+
+.add {
+    grid-area: plus;
+}
+
+.subtract {
+    grid-area: subt;
+}
+
+.multiply {
+    grid-area: mult;
+}
+
+.divide {
+    grid-area: divi;
+}
+
+.clear {
+    grid-area: clear;
+}
