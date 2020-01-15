@@ -50,23 +50,23 @@ body, html {
 }
 
 .clear {
-    background-color: #377c71;
+    background-color: #F0F3BD;
 }
 
 .clear:active {
-    background-color: #1a3d37;
+    background-color: rgb(139, 141, 108);
 }
 
 .operator {
-    background-color: #91e8ee;
+    background-color: #05668D;
 }
 
 .operator:active {
-    background-color: #4b7a7e;
+    background-color: rgb(2, 57, 78);
 }
 
 .num, .decimal {
-    background-color: #383737;
+    background-color: #363537;
     color: #ffffff;
 }
 
@@ -76,11 +76,11 @@ body, html {
 }
 
 .equals {
-    background-color: #e79b0e;
+    background-color: #00A896;
 }
 
 .equals:active {
-    background-color: #7a5106;
+    background-color: rgb(2, 117, 106);
 }
 
 .btn {
