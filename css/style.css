@@ -25,10 +25,12 @@ body, html {
 /*Calculator*/
 
 .display-container {
-    font-size: 25px;
+    border: 1px solid gray;
+    color: rgb(53, 52, 52);
+    font-size: 30px;
     padding-top: 16%;
     text-align: center;
-    background-color: #b8b8a8;
+    background-color: #ffffff;
     width: 250px;
     height: 120px;
     position: absolute;
@@ -39,54 +41,74 @@ body, html {
 }
 
 .calculator {
-    background-color: #808080;
+    border: 2px solid rgb(71, 70, 70);
+    background-color: rgb(211, 212, 209);
     height: 450px;
     width: 300px;
     position: absolute;
     left: 50%;
-    top: 60%;
+    top: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
 }
 
 .clear {
-    background-color: #F0F3BD;
+    background-color: rgb(202, 78, 76);
+}
+
+.clear:hover {
+    background-color: rgb(252, 97, 95);
+    cursor: pointer;
 }
 
 .clear:active {
-    background-color: rgb(139, 141, 108);
+    background-color: rgb(150, 57, 56);
 }
 
 .operator {
-    background-color: #05668D;
+    background-color: #247BA0;
+}
+
+.operator:hover {
+    background-color: rgb(45, 154, 201);
+    cursor: pointer;
 }
 
 .operator:active {
-    background-color: rgb(2, 57, 78);
+    background-color: rgb(24, 85, 110);
+    cursor: pointer;
 }
 
 .num, .decimal {
-    background-color: #363537;
+    background-color: #434244;
+    color: #ffffff;
+}
+
+.num:hover, .decimal:hover {
+    background-color: #5c5b5e;
     color: #ffffff;
 }
 
 .num:active, .decimal:active {
-    background-color: #616060;
+    background-color: #3a3939;
     color: #ffffff;
 }
 
 .equals {
-    background-color: #00A896;
+    background-color: rgb(207, 182, 82);
+}
+
+.equals:hover {
+    background-color: #FFE066;
 }
 
 .equals:active {
-    background-color: rgb(2, 117, 106);
+    background-color: rgb(153, 134, 60);
 }
 
 .btn {
     text-align: center;
     font-size: 40px;
-    box-shadow: 2px 2px 2px #000000;
     border-radius: 2px;
 }
 
